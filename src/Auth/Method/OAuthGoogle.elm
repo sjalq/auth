@@ -115,6 +115,7 @@ getUserInfo authenticationSuccess =
                             |> String.join " "
                             |> nothingIfEmpty
                     , username = Nothing
+                    , picture = Nothing
                     }
 
             Err err ->

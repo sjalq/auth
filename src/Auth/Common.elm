@@ -175,6 +175,7 @@ type alias UserInfo =
     { email : String
     , name : Maybe String
     , username : Maybe String
+    , picture : Maybe String
     }
 
 
