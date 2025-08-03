@@ -90,6 +90,7 @@ getUserInfoTask authenticationSuccess =
                     |> optional "email" Json.string ""
                     |> optional "name" decodeNonEmptyString Nothing
                     |> optional "login" decodeNonEmptyString Nothing
+                    |> optional "avatar_url" decodeNonEmptyString Nothing
                 )
         , timeout = Nothing
         }
