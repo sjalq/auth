@@ -39,6 +39,9 @@ init model methodId origin navigationKey toBackendFn =
         "OAuthAuth0" ->
             Auth.Protocol.OAuth.onFrontendCallbackInit model methodId origin navigationKey toBackendFn
 
+        "OAuthAuth0Microsoft" ->
+            Auth.Protocol.OAuth.onFrontendCallbackInit model methodId origin navigationKey toBackendFn
+
         _ ->
             let
                 clearUrl =
